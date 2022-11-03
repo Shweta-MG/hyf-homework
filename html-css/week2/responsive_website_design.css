@@ -1,0 +1,296 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+
+/* body and website container styling starts here.*/
+body{
+    background-color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.website{
+    width: 100%;
+}
+    
+
+
+/* header styling starts here.*/
+header{
+    background-color: rgb(239, 239, 239);
+    height: 170px;  
+}
+
+.header_1{
+    margin-left: 150px;
+    line-height: 35px;
+}
+
+.header_2{
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 36px;
+}
+
+.header_3{
+    color: rgb(154, 154, 154);
+}
+
+
+/* navigation bar styling starts here.*/
+.nav1{
+    margin-left: 150px;
+    position: relative;    
+}
+
+.ul_1{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 350px;
+    height: 40px;
+    align-items: center;  
+    text-transform: capitalize;  
+}
+
+.ul_1 .home:hover{color: rgb(184, 184, 184);}
+
+.ul_1 .about:hover{color: rgb(184, 184, 184);}
+
+.ul_1 .services:hover{color: rgb(184, 184, 184);} 
+
+.ul_1 .office:hover{color: rgb(184, 184, 184);}
+
+
+/* Image styling starts here.*/
+.image_1 img{ 
+    width: 100%;
+    max-height: 425px;
+    overflow: hidden;
+}
+
+
+/* main section with logo styling starts here.*/
+main{
+    width: 100%;
+    height: auto;
+    
+}
+.web_middle_part{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    line-height: 15px;
+}
+
+.web_middle_part .upper_left{
+    width: 250px;
+    padding: 0;   
+    font-size: 12px;  
+    margin-left: 150px;
+    margin-right: 10px;
+}
+
+.web_middle_part .upper_left h3{
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.web_middle_part .lower_left{
+    width: 250px;
+    padding: 0;
+    font-size: 12px;
+    margin-left: 150px;
+    margin-right: 10px;
+}
+
+.web_middle_part .lower_left h3{
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 50px;
+}
+
+
+.web_middle_part .upper_right{
+    width: 500px;
+    padding: 5px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.web_middle_part .upper_right h2{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.web_middle_part .lower_right{
+    text-transform: uppercase;
+    width: 500px;
+    padding: 5px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.web_middle_part .lower_right h2{
+    text-transform: uppercase;
+}
+
+.logo_1 img{
+    width: 110px;
+    margin: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+
+
+/* footer styling starts here.*/
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: blue;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+
+.footer_1{
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 150px;
+    display: flex;
+    padding: 0;
+    color: white; 
+}
+
+
+.footer-item{
+    width: 200px;
+    text-transform: capitalize;
+    margin-right: 40px;
+}
+.footer-item h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-item ul{
+   list-style: none;}
+
+.footer_1 .footer_item1 ul li{
+    line-height: 40px;
+    font-weight: bold;
+}
+
+/* responsive designs starts here.*/
+
+@media screen and (max-width: 424px) {
+    .header_1{margin-left: 20px;}
+
+    .header_2{font-size: 24px;}
+
+    .nav1{
+        margin-left: 20px;
+        position: relative;
+        height: 95px; 
+        margin-top: 5px;   
+    }
+    
+    .ul_1{
+        display: block;
+        width: 250px;
+        align-items: center;           
+    }
+    
+    .web_middle_part{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 420px;
+        display: block;
+    }
+
+    .web_middle_part .upper_left{
+        font-size: 14px;  
+        margin-left: 20px;
+        padding-right: 10px;
+        width: 395px;
+    }
+    
+      
+    .web_middle_part .lower_left{
+        font-size: 14px;
+        margin-left: 20px;
+        width: 395px;
+    }
+    
+      
+    
+    .web_middle_part .upper_right{
+        margin-left: 20px;
+        width: 395px;
+        margin-right: 30px;
+        padding-right: 10px;
+    }
+    
+      
+    .web_middle_part .lower_right{
+        text-transform: uppercase;
+        width: 395px;
+        margin-left: 20px;               
+    }
+          
+    .logo_1 img{
+        width: 140px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    footer{
+        height: 750px;
+        background-color: blue;
+        margin-bottom: 10px;
+    }
+
+    .footer_1{
+        width: 395px;
+        margin-left: 20px;
+        display: block;
+    }     
+    
+    .footer-item .location ul li iframe #HYF-map{
+        display: none;
+        background-color: white;
+        color: blue;
+    }
+    
+    .footer-item{
+        width: 200px;
+        text-transform: capitalize;
+        margin-right: 10px;
+    }
+    .footer-item h4{
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+    
+    .footer-item ul{
+       list-style: none;}
+    
+    .footer_1 .footer_item1 ul li{
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+        
+}
