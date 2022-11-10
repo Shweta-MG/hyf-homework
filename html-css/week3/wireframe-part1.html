@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wireframe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>wireframe-part1</title>
+</head>
+
+<body>
+    <div class="webiste">
+        
+        <header>
+            <ul>
+                <li><a href="#">For Him</a> </li>
+                <li><a href="#">For Her</a> </li>
+                <li><a href="#">Shirt Promotion</a> </li>
+            </ul>
+        </header>
+
+
+        <nav>
+            <div>
+                <div class="logo"><a href="#"> <img src="tailor-shop-logo.jpg" alt="logo Your custom tailor"></a></div>
+                <div class="navigation"><a href="#">New Arrival</a></div>
+                <div class="navigation"><a href="#">Clothing</a></div>
+                <div class="navigation"><a href="#">Outerwear</a></div>
+                <div class="navigation"><a href="#">Shoes</a></div>
+                <div class="navigation"><a href="#">Wedding</a></div>
+                <div class="navigation"><a href="#">Your profile </a></div> 
+            </div>            
+        </nav>
+
+
+        <main>
+            <div class="description">
+                <h1 class="heading-1">
+                    <p>Sign up to yourcustomtailor.com</p>
+                </h1>
+                
+                <p>
+                    We can't wait to help you improve your life-style and gain the attention from people around you!
+                </p> <br>
+                <p>
+                    Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences and style. Every week we will send you a hand-picked selection-we just need to know a few details about you first...
+                </p>
+            </div>
+
+
+            <!--I wrote '<form action=“./wireframe-part2.html” method=“post”>' here. But it not taking me to the next step of the page. So now I have decided to make it work the old way (which I know, is a wrong way..probably).
+            
+            These codes were working in Jemima's laptop. But not in my laptop.-->
+
+            <form>
+                <div class="form-1">
+                    <h2>Step 1/4-tell us who you are?</h2>
+                    <div class="progress">
+                        <h3>Progress</h3>
+                        <div class="progress-bar">
+                            <p><span style="width: 5%;"></span></p>
+                        </div>
+                    </div>
+                    <p>
+                        Nice to meet you. Let's spend a minute to get to know each   other? Please enter the following:
+                    </p>
+                    <div class="name">
+                        <div class="first-name">
+                            <label for="name">First Name*</label>
+                            <input type="text" id="first-name" placeholder="Jhonas" minlength="2" maxlength="64" required>                        
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name" id="last-name">Last Name*</label>
+                            <input type="text" id="last-name" placeholder="Kim" minlength="2" maxlength="64" required>
+                        </div>
+                    </div>
+
+                    <div class="country">
+                        <label for="country">Country*</label>
+                        <select name="country" id="country" required>
+                            <option disabled selected value="country">- select an option -</option>
+                            <option value="india">India</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="afganistan">Afganistan</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="germany">Germany</option>
+                            <option value="poland">Poland</option>
+                        </select>                    
+                    </div>
+
+                    <div class="address">
+                        <div class="street">
+                            <label for="street">Street address</label>
+                            <input type="text" id="street" name="street" placeholder="Your address here" minlength="6" maxlength="164"  required>                    
+                        </div>
+
+                        <div class="post-code">
+                            <label for="post-code">Post Code*</label>
+                            <input type="text" id="post-code" name="post-code" pattern="[0-9]{4,4}" maxlength="4" placeholder="0000" required>
+                        </div>
+                    </div>
+    
+                    <div class="profile">
+                        <label for="profile"> <span>Profile description</span>
+                             <br> 
+                            <p>
+                                Please provide a short description of yourself to be displayed on our social community pages.
+                            </p>
+                        </label>
+                        <textarea name="profile" id="profile" maxlength="500" placeholder="Brief description using max 500 words" cols="30" rows="10"></textarea>                        
+                    </div>
+                    <div class="shipping-address">
+                        <p><br>
+                            Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.
+                        </p>
+                        <div class="shipping">
+                            <label for="shipping">Shipping address</label>
+                            <input type="checkbox" id="shipping" name="shipping" value="yes" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="reset">
+                           <button type="reset"> Reset</button> 
+                        </div>
+
+                        <!-- When I wrote '<a href="wireframe-part2.html"><button type="submit">Submit</button></a>' 'submit' button worked as 'reset'.So I am changing it. 
+                        
+                        When I shared the file with Jemima, the code was '<button type="submit">Submit</button>'. That worked for her.
+
+                        When I am using '<button type="submit"><a href="wireframe-part2.html">Submit</a></button>' it allows me to go to next page without filling any entry.  
+                    
+                        But I will keep it this way, because I have decided to work on rest of the home.-->              
+                    
+                    
+                        <div class="submit">                            
+                            <button type="submit"><a href="wireframe-part2.html">Submit</a></button>
+                        </div>
+                    </div>  
+                </div>   
+            </form>
+        </main> 
+        <footer>
+            <p>
+                By logging in or creating an account, you are agreeing to yourcustomtailor's <a href="#">Terms of Use</a> 
+            </p>
+        </footer>    
+    </div>    
+</body>
+</html>
