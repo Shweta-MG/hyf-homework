@@ -364,6 +364,7 @@ form .option input{
     margin-top: 20px;
     margin-right: 20px;
     border: 2px solid orange;
+    border-radius: 15px;
 
 }
 
