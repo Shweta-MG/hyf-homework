@@ -4,7 +4,7 @@ let dogYearOfBirth = 2017;
 let dogHumanYear = dogYearFuture - dogYearOfBirth;
 let dogYear = dogHumanYear * 7;
 let shouldShowResultInDogYears == true;
-if (shouldShowResultInDogYears = true) {
+if (shouldShowResultInDogYears) {
     console.log("Your dog will be " + dogYear + " dog years old in " + dogYearFuture + " .");
     
 } else {
