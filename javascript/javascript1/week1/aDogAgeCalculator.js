@@ -9,4 +9,5 @@ if (shouldShowResultInDogYears) {
     
 } else {
     console.log("Your dog will be " + dogHumanYear + " dog years old in " + dogYearFuture + " .");    
+
 }
