@@ -46,7 +46,7 @@ body{
     color: rgb(255, 255, 255);
 }
 
-.resume .op .Contact .title{
+.resume .op .contact .title{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -73,13 +73,13 @@ body{
     padding: 5px;
 }
 
-.resume .middle .Skills .body_details{
+.resume .middle .skills .body_details{
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
-.resume .middle .Experience .Job_description{
+.resume .middle .experience .Job_description{
     margin-left: 30px;
 }
 
