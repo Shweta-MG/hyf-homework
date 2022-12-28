@@ -14,12 +14,12 @@ body{
     margin: 50px auto;
 }
 
-.Resume{
+.resume{
     margin: 30px;
     background-color: rgb(255, 255, 255);
 }
 
-.Resume .Top{
+.resume .top{
     margin: 0;
     padding: 0;
     background-color: rgb(2, 2, 115);
@@ -27,7 +27,7 @@ body{
     height: 180px;
 }
 
-.Resume .Top .Name{
+.resume .top .name{
     margin-top: 50px ;
     margin-left: 20px;
     color: rgb(249, 251, 253);
@@ -38,7 +38,7 @@ body{
     line-height: 40px;
 }
 
-.Resume .Top .Contact{
+.resume .top .contact{
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
@@ -46,18 +46,18 @@ body{
     color: rgb(255, 255, 255);
 }
 
-.Resume .Top .Contact .title{
+.resume .op .Contact .title{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
     margin-top: 10px;
 }
 
-.Resume .Middle{
+.resume .middle{
     background-color: rgb(255, 255, 255);
 }
 
-.Resume .Middle .body_title{
+.resume .middle .body_title{
     margin: 10px;
     margin-left: 15px;
     padding: 5px;
@@ -67,30 +67,29 @@ body{
     border-bottom: 2px solid rgb(4, 4, 4) ;
 }
 
-.Resume .Middle .body_details{
+.resume .middle .body_details{
     margin: 10px;
     margin-left: 15px;
     padding: 5px;
 }
 
-.Resume .Middle .Skills .body_details{
+.resume .middle .Skills .body_details{
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
-.Resume .Middle .Experience .Job_description{
+.resume .middle .Experience .Job_description{
     margin-left: 30px;
 }
 
-.Resume .Middle .Certification{
+.resume .middle .certification{
     margin-bottom: 20px;
 }
 
-.Resume .Bottom{
+.resume .bottom{
     margin: 0;
     padding: 0;
     height: 25px;
     background-color: rgb(2, 2, 115);
 }
-
