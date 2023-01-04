@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 800px;
+    height: 600px;
+    /* background-image: linear-gradient(to right, red, yellow); */
+    background-image: radial-gradient(rgb(161, 161, 63), rgb(172, 172, 53), green);
+}
