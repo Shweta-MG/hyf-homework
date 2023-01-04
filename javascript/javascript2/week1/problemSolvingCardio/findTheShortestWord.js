@@ -6,8 +6,17 @@ console.log(
   })
 )
 
-// find longest string in array
+let shortestWord = danishWords.reduce(
+  function  (a,b) {
+    if (a.length <= b.length){
+      return a;
+    }  
+  }
+)
 
+
+// find longest string in array
+// It is not part of the homework. I doing it for prectice.
 function notThisFunctionName(danishWords)
   {
     let maxStr = danishWords[0].length;
@@ -25,6 +34,7 @@ function notThisFunctionName(danishWords)
 console.log(notThisFunctionName(danishWords));
 
 // sort array according to string length
+// It is not part of the homework. I doing it for prectice.
 function sortByLength (danishWords) {
     return danishWords.sort((x,y) => x.length - y.length);
  }
