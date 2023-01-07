@@ -22,3 +22,7 @@ else if (command.includes("name"))
     return "Hello " + name1 + " Welcome home!! How was your day?"
 }
 
+//answer the question    
+else if (command.includes ("What is my name") || command.includes("remember")) {
+    return name1
+}
