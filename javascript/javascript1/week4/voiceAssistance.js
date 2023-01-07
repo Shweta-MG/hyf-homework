@@ -48,3 +48,15 @@ else if (command === "Add shopping to my todo") {
     return toDoList[2] + " added to your todo List."
 }
 
+//recollection of todoList
+else if (command === "Number of activities on my todo List"){
+    return "You have " + toDoList.length + " activities to do."
+}
+
+else if (command === "First thing to do today"){
+    return "You have " + toDoList[0] + " first to do today."
+}
+
+else if (command === "Second thing to do today"){
+    return "You have " + toDoList[1] + "  second thing to do today."
+}
