@@ -105,3 +105,33 @@ else if (command.includes("second")) {
     return "Timer is set for " + second + " seconds."
 }
 
+//do simple maths
+else if (command.includes("+")) {
+    return (a + b)
+}
+
+else if (command.includes ("-")) {
+    return (a - b)
+}
+
+else if (command.includes ("*")) {
+    return (a * b)
+}
+
+else if (command.includes ("/")) {
+    return (a / b)
+}
+
+else if (command.includes ("%")) {
+    return (a % b)
+}
+
+//search on google
+else if (command.includes("google")){
+    function redirect(){
+        location.href="https://www.google.com"
+        return redirect()
+    }
+    return "Find yor search result"
+}
+}
