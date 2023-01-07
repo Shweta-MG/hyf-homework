@@ -67,3 +67,22 @@ else if (command === "Remove fishing from my todo") {
     const indexOfFishing = toDoList.splice(toDoList.indexOf("fishing"), 1);
     return "Removed " + indexOfFishing + " from your todoList."
 }
+
+// date today
+else if (command.includes("date")){
+    return "date is " + new Date().toISOString().slice(0, 10);  
+}
+
+else if (command.includes("day of month")) {
+
+    let day = new Date().getDate();
+    
+    let monthOfYear = ['january','february','march','april','may','june','july','august','september','november','december']
+    let month = new Date().getMonth() +1;
+    month = monthOfYear[month];
+
+
+    let year = new Date().getFullYear();
+    return day+ ". day" + " of " + month + " month of" +  year +"."
+}
+
