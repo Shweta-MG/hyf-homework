@@ -60,3 +60,10 @@ else if (command === "First thing to do today"){
 else if (command === "Second thing to do today"){
     return "You have " + toDoList[1] + "  second thing to do today."
 }
+
+//remove items from to-do list
+
+else if (command === "Remove fishing from my todo") {
+    const indexOfFishing = toDoList.splice(toDoList.indexOf("fishing"), 1);
+    return "Removed " + indexOfFishing + " from your todoList."
+}
