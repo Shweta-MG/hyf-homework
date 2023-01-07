@@ -26,3 +26,9 @@ else if (command.includes("name"))
 else if (command.includes ("What is my name") || command.includes("remember")) {
     return name1
 }
+
+//Empty string    
+else if (command === " ") {
+    return "Hi there!! May I know your name"
+}
+
