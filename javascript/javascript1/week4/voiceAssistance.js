@@ -32,3 +32,19 @@ else if (command === " ") {
     return "Hi there!! May I know your name"
 }
 
+//update to-do list
+else if (command === "Add fishing to my todo") {
+    toDoList.push("fishing");
+    return toDoList[0] + " added to your todo List."
+}
+
+else if (command === "Add singing in the shower to my todo") {
+    toDoList.push("singing in the shower");
+    return toDoList[1] + " added to your todo List."
+}
+
+else if (command === "Add shopping to my todo") {
+    toDoList.push("shopping");
+    return toDoList[2] + " added to your todo List."
+}
+
