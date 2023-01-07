@@ -135,3 +135,31 @@ else if (command.includes("google")){
     return "Find yor search result"
 }
 }
+
+// logging the commands
+
+console.log(getReply("hello"));
+console.log(getReply("I am Shweta"));
+console.log(getReply("Hello my name is Benjamin"));
+console.log(getReply("Do you remember me"));
+//console.log(getReply("what is my name"));
+console.log(getReply(" ")); 
+console.log(getReply("Add fishing to my todo"));
+console.log(getReply("Add singing in the shower to my todo"));
+console.log(getReply("Add shopping to my todo"));
+console.log(getReply("Number of activities on my todo List"));
+console.log(getReply("First thing to do today"));
+console.log(getReply("Second thing to do today"));
+console.log(getReply("Remove fishing from my todo"));
+console.log(getReply("today's date"));
+console.log(getReply("date"));
+console.log(getReply("what is the date today"));
+console.log(getReply("day of month"));
+console.log(getReply("set timer for minute"));
+console.log(getReply("set timer for second"));
+console.log(getReply("let me know a + b"));
+console.log(getReply("let me know a - b"));
+console.log(getReply("let me know a / b"));
+console.log(getReply("let me know a % b"));
+console.log(getReply("let me know a * b"));
+console.log(getReply("google my current location"));
