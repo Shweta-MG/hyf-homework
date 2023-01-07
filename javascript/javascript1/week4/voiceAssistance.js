@@ -14,3 +14,11 @@ if (command.includes ("hello", "hey")) {
 else if (command.includes("I am ")){
     return "Hello! Nice to meet you."
 }
+
+//personal greeting message
+else if (command.includes("name"))
+{   
+    name1 = command.split(" ").pop();
+    return "Hello " + name1 + " Welcome home!! How was your day?"
+}
+
