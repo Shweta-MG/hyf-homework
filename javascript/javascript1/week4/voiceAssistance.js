@@ -141,10 +141,9 @@ else if (command.includes("google")){
 }
 
 // calling the commands
-
 console.log(getReply("hello"));
 console.log(getReply("I am Shweta"));
-console.log(getReply("Hello my name is Benjamin"));
+console.log(getReply("Hello!! my name is Benjamin"));
 console.log(getReply("Do you remember me"));
 //console.log(getReply("what is my name"));
 console.log(getReply(" ")); 
