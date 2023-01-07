@@ -1,6 +1,8 @@
 //declare variables
 let name1 = "  ";
 let toDoList = [];
+
+// number declared as global variable for simple math part. 
 let a = 10;
 let b = 12;
 
@@ -106,6 +108,7 @@ else if (command.includes("second")) {
 }
 
 //do simple maths
+//I will try to write better way. 
 else if (command.includes("+")) {
     return (a + b)
 }
@@ -127,6 +130,7 @@ else if (command.includes ("%")) {
 }
 
 //search on google
+// google page not popping out. I am not sure, if I am logging it out properly.
 else if (command.includes("google")){
     function redirect(){
         location.href="https://www.google.com"
@@ -136,7 +140,7 @@ else if (command.includes("google")){
 }
 }
 
-// logging the commands
+// calling the commands
 
 console.log(getReply("hello"));
 console.log(getReply("I am Shweta"));
