@@ -86,3 +86,22 @@ else if (command.includes("day of month")) {
     return day+ ". day" + " of " + month + " month of" +  year +"."
 }
 
+//set timer
+else if (command.includes("minute")) {
+    let minute = 1
+    const timerMinute = minute * 60 * 1000 //converting into milisecond
+    setTimeout(()=> {
+        console.log("Timer finished for 1 minute");
+    }, timerMinute );    
+    return "Timer is set for " + minute + " minute."
+}   
+
+else if (command.includes("second")) {
+    let second = 10
+    const timerSecond = second * 1000 //converting into milisecond
+    setTimeout(()=> {
+    console.log("Timer finished for 10 seconds");
+    }, timerSecond );
+    return "Timer is set for " + second + " seconds."
+}
+
