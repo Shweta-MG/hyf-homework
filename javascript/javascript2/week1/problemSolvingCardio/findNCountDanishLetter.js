@@ -19,18 +19,17 @@ function individualChar(danishString) {
       }; 
 
       for (let i = 0; i < danishString.length; i++) {
-        const stringsIndex = danishString[i];
-        if (stringsIndex === "å") {
+        if (danishString[i] === "å") {
           count++;
           countå++;
           output.å = countå;
     
-        } else if (stringsIndex === "ø") {
+        } else if (danishString[i] === "ø") {
           count++;
           countø++;
           output.ø = countø;
 
-        } else if (stringsIndex === "æ") {
+        } else if (danishString[i] === "æ") {
           count++;
           countæ++;
           output.æ = countæ;
