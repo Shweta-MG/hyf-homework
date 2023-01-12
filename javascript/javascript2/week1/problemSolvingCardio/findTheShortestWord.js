@@ -57,5 +57,3 @@ function notThisFunctionName(danishWords)
   console.log(notThisFunctionName(danishWords));
 
 */
-
-
