@@ -36,6 +36,26 @@ function shortesdWord(danishWords) {
 
 console.log(shortesdWord(danishWords));
 
+
+
+I try to find the longet word in array. this is giving me right answer.
+
+function notThisFunctionName(danishWords)
+  {
+    let longestStr = danishWords[0].length;
+    let ans = danishWords[0];
+    for (let i = 0; i < danishWords.length; i++) {
+        let longesti = danishWords[i].length;
+        if (longesti > longestStr) {
+            ans = danishWords[i];
+            longestStr = longesti;
+        }
+    }
+    return ans;
+  }
+
+  console.log(notThisFunctionName(danishWords));
+
 */
 
 
