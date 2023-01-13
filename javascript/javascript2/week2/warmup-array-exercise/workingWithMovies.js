@@ -45704,10 +45704,18 @@ console.log(shortTitledMovies.length);
 
 
 
-
 //2. Create an array of movie titles with long movie titles
 let longTitledMovies = movies
 .filter((movieTitle) => movieTitle.title.length > 45)
 .map((movie) => movie.title)
 console.log(longTitledMovies);
 console.log(longTitledMovies.length);
+
+
+// 3. Count the number of movies made between 1980-1989 (including both the years)
+let countMovie = movies
+.filter((count) => count.year >= 1980 && count.year <= 1989)
+.map((count)=> count.title)
+console.log(countMovie);
+console.log(countMovie.length);
+  
