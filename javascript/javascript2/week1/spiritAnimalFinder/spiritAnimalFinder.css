@@ -1,0 +1,130 @@
+/*This is not part of the homework, I did it for CSS revision. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Pardon me for choice of color. I will change it if I get time. I running little behind the schedule*/
+
+body {
+   background-color: rgb(178, 215, 238);
+   display: flex;
+   align-items: center;
+}
+
+/*Background-image (gradient pattern) is not fitting properly in the body tag, so I am making it under a container tag. I need to look into this later on*/
+.container {
+    width: 1250px;
+    height: 600px;    
+    border: 5px solid rgb(10, 20, 53); 
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    display: block;
+    line-height: 40px;
+
+    /*
+    background-image: radial-gradient(rgb(63, 161, 153), rgb(53, 162, 172), rgb(0, 32, 128));
+    */
+    background-size: cover;
+    background-image: url(2499162.jpg);
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(7, 30, 7);
+    padding: 20px;
+    line-height: 10px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(7, 30, 7);
+    padding: 10px;
+}
+
+.inputName {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(7, 30, 7);
+    padding: 10px;
+}
+
+/*Same styling was given to two class. But 1) placeholder text is not red 2) margin of name input and selection input in not inline.*/
+
+.label #selectOption {
+    width: 200px;
+}
+
+.inputName #name {
+    width: 700px;
+}
+
+
+.inputName #name ,
+.label #selectOption,
+.label #selectOption option {
+    height: 30px;
+    padding: 5px;
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(42, 97, 10);
+    border: 1px solid rgb(19, 66, 19); 
+    border-radius: 30px;
+}
+
+.label #selectOption option {
+    background-color: rgb(223, 223, 245);
+}
+
+/* I tried to change color of text in placeholder.*/
+#name::placeholder {
+    color: rgb(42, 97, 10);
+}
+
+.button .clickButton {
+    margin-right: 350px;
+}
+
+/*I could not move the buttons into center of the container.
+
+finally ...I did it.*/
+.labelButton {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 90px;
+}
+
+.button {
+    height: 30px;
+    width: 320px;
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(7, 30, 7);
+    background-color: rgb(90, 163, 129);
+    border: 1px solid rgb(19, 66, 19); 
+    border-radius: 30px;    
+}
+
+p {
+    height: 100px;
+    width: 700px;
+    margin-left: 110px;
+    background-color: rgb(223, 223, 245);
+    padding: 5px;
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(42, 97, 10);
+    border: 1px solid rgb(19, 66, 19); 
+    border-radius: 10px;
+}
