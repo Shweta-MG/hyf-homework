@@ -45756,3 +45756,13 @@ const sixRatedMovies = movies
 .map((movieRatedSix) => movieRatedSix.rating)
 console.log(sixRatedMovies.length);
 console.log(sixRatedMovies);
+
+
+/* 6. Count the total number of movies containing any of following keywords: Surfer, Alien or Benjamin. So if there were 3 movies that contained Surfer, 1 with Alien and 2 with Benjamin, you would return 6. Can you make sure the search is case insensitive?
+
+*/
+const movieKeyword = movies
+.filter((keyword) => keyword.title.toLowerCase().includes("alien") || keyword.title.toLowerCase().includes("benjamin") || keyword.title.toLowerCase().includes("surfer"))
+.map((keyword) => keyword.title);
+console.log(movieKeyword.length);
+console.log(movieKeyword);
