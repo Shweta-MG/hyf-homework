@@ -45690,3 +45690,14 @@ const movies = [
       running_times: 5580
     }
   ]
+
+
+/*
+I decided to console the number of output in every solution to match the number of output in my search results.
+*/
+// 1. Create an array of movies containing the movies with a short title 
+let shortTitledMovies = movies
+.filter((movieName) => movieName.title.length < 5)
+.map((movieName) => movieName.title);
+console.log(shortTitledMovies);
+console.log(shortTitledMovies.length);
