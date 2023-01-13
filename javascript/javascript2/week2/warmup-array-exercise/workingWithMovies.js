@@ -45718,4 +45718,33 @@ let countMovie = movies
 .map((count)=> count.title)
 console.log(countMovie);
 console.log(countMovie.length);
+
+
+/* 
+4. Create a new array that has an extra key called tag. The tag is based on the rating: Good (>= 7), Average (>= 4 and < 7), Bad (< 4)
+
+Number of all the movies is also consoled to check the output.
+*/
+  
+const goodMovies = movies
+.filter((goodTag) => goodTag.rating >= 7)
+.map((goodTaggedMovies) => Object.assign(goodTaggedMovies, {tag: "Good"}))
+console.log(goodMovies.length);
+console.log(goodMovies);
+  
+  
+const averageMovies = movies
+.filter((averageTag) => averageTag.rating >= 4 && averageTag.rating <7)
+.map((averageTaggedMovies) => Object.assign(averageTaggedMovies, { Tag: "Average"}))
+console.log(averageMovies.length);
+console.log(averageMovies);
+  
+  
+const badMovies = movies
+.filter((badTag) => badTag.rating < 4)
+.map ((badTaggedMovies) => Object.assign(badTaggedMovies, {Tag: "Bad"}))
+console.log(badMovies.length);
+console.log(badMovies);
+  
+console.log(movies.length);
   
