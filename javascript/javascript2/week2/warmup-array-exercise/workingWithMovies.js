@@ -45701,3 +45701,13 @@ let shortTitledMovies = movies
 .map((movieName) => movieName.title);
 console.log(shortTitledMovies);
 console.log(shortTitledMovies.length);
+
+
+
+
+//2. Create an array of movie titles with long movie titles
+let longTitledMovies = movies
+.filter((movieTitle) => movieTitle.title.length > 45)
+.map((movie) => movie.title)
+console.log(longTitledMovies);
+console.log(longTitledMovies.length);
