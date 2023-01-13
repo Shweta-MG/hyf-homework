@@ -45720,8 +45720,7 @@ console.log(countMovie);
 console.log(countMovie.length);
 
 
-/* 
-4. Create a new array that has an extra key called tag. The tag is based on the rating: Good (>= 7), Average (>= 4 and < 7), Bad (< 4)
+/*  4. Create a new array that has an extra key called tag. The tag is based on the rating: Good (>= 7), Average (>= 4 and < 7), Bad (< 4)
 
 Number of all the movies is also consoled to check the output.
 */
@@ -45749,7 +45748,8 @@ console.log(badMovies);
 console.log(movies.length);
 
 
-// 5. Using chaining, first filter the movies array to only contain the movies rated higher than 6. Now map the movies array to only the rating of the movies.
+/* 5. Using chaining, first filter the movies array to only contain the movies rated higher than 6. Now map the movies array to only the rating of the movies.
+*/
   
 const sixRatedMovies = movies
 .filter((rating6) => rating6.rating > 6)
@@ -45759,8 +45759,8 @@ console.log(sixRatedMovies);
 
 
 /* 6. Count the total number of movies containing any of following keywords: Surfer, Alien or Benjamin. So if there were 3 movies that contained Surfer, 1 with Alien and 2 with Benjamin, you would return 6. Can you make sure the search is case insensitive?
-
 */
+
 const movieKeyword = movies
 .filter((keyword) => keyword.title.toLowerCase().includes("alien") || keyword.title.toLowerCase().includes("benjamin") || keyword.title.toLowerCase().includes("surfer"))
 .map((keyword) => keyword.title);
