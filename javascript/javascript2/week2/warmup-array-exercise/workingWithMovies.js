@@ -45747,4 +45747,12 @@ console.log(badMovies.length);
 console.log(badMovies);
   
 console.log(movies.length);
+
+
+// 5. Using chaining, first filter the movies array to only contain the movies rated higher than 6. Now map the movies array to only the rating of the movies.
   
+const sixRatedMovies = movies
+.filter((rating6) => rating6.rating > 6)
+.map((movieRatedSix) => movieRatedSix.rating)
+console.log(sixRatedMovies.length);
+console.log(sixRatedMovies);
