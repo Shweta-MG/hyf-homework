@@ -15,7 +15,6 @@ console.log(shortesdWord[0]);
 //get longest word in the list
 console.log(shortesdWord[shortesdWord.length - 1]);
 
-
 /* 
 I wrote this programme and for some reason, it is giving me 'bil' as shortest word.
 function shortesdWord(danishWords) {
@@ -32,6 +31,9 @@ function shortesdWord(danishWords) {
 }
 console.log(shortesdWord(danishWords));
 I try to find the longet word in array. this is giving me right answer.
+
+
+
 function notThisFunctionName(danishWords)
   {
     let longestStr = danishWords[0].length;
@@ -46,4 +48,3 @@ function notThisFunctionName(danishWords)
     return ans;
   }
   console.log(notThisFunctionName(danishWords));
-*/
