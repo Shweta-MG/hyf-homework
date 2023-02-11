@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+background-color: black;
+color: aquamarine;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#converterBody {
+    margin: 50px auto;
+    width: 500px;
+}
+
+h1 {
+   font-style: italic;
+   font-size: 50px;
+   font-weight: 30px;
+   margin-bottom: 30px;
+}
+
+#executionForm label{
+    display: inline;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+#executionForm input, #executionForm select
+ {
+    background-color: aquamarine;
+    height: 20px;
+    border: none;
+    margin: 10px;
+    width: 250px;
+}
+
+
+#submit {
+    width: 100px;
+    margin: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+#reset{
+    width: 100px;
+    margin: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(132, 85, 85);
+}
+
+#convertedAmount{
+    font-size: 25px;
+    color: rgb(142, 47, 47);
+    font-weight: bold;
+    margin: 10px auto;
+}
