@@ -8,11 +8,12 @@ const names = [
     "katrine",
     "Tala",
   ];
-  const nameToRemove = "Ahmad";
+ 
+const nameToRemove = "Ahmad";
   
   // Write some code here
-
-  const newNames = names.splice(1, 1);
+const index = names.indexOf(nameToRemove);
+const newNames = names.splice(index, 1);
   
   // Code done
   
