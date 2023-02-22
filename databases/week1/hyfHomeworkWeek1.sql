@@ -75,7 +75,7 @@ WHERE user.name LIKE '%Maryrose %';
 
 --10. Find how many tasks each user is responsible for;
 USE hyfHomeworkWeek1;
-SELECT name, COUNT(user_id)
+SELECT name AS User_Name, COUNT(user_id)
 FROM user
 JOIN task ON user_id = user.id
 GROUP BY user_id;
@@ -83,7 +83,7 @@ GROUP BY user_id;
 
 --1.1 Find how many tasks with a status=Done each user is responsible for;
 USE hyfHomeworkWeek1;
-SELECT user.id, user.name, COUNT(task.id)
+SELECT user.id AS User_ID, user.name AS User_Name, COUNT(task.id)
 FROM user
 JOIN task ON task.user_id = user.id
 JOIN status ON status.id = task.status_id
