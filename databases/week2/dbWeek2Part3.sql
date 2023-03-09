@@ -6,10 +6,7 @@ SELECT * FROM user;
 
 --Part 3: More queries
 --Get all the tasks assigned to users whose email ends in @spotify.com
-SELECT task.*
-FROM task
-INNER JOIN user
-ON user.id
+
 
 
 --Get all the tasks for 'Donald Duck' with status 'Not started'
