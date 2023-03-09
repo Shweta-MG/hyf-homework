@@ -1,4 +1,6 @@
 --Create a new database containing the following tables:
+CREATE DATABASE School;
+
 --Class: with the columns: id, name, begins (date), ends (date)
 USE School;
 CREATE TABLE Class (
