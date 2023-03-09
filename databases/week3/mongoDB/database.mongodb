@@ -1,0 +1,118 @@
+// Select the database to use.
+use('mealSharingApp');
+
+
+
+// Insert a few documents into the sales collection.
+db.Meals.insertMany([
+  {
+    'id': 1, 
+    'title': 'Chicken Curry',
+    'description': 'Delicious Indian dish',
+    'location': 'Aarhus',
+    'When': new Date ('2023-04-01T11:30:00Z'),
+    'max_reservation' : 3 , 
+    'price' : 150,
+    'created_date' : new Date ('2023-03-01')
+  },
+
+    {
+    'id': 2, 
+    'title': 'Butter Chicken Curry',
+    'description': 'Delicious buttery Indian dish',
+    'location': 'Aarhus',
+    'When': new Date ('2023-04-07T09:30:00Z'),
+    'max_reservation' : 10, 
+    'price' : 150,
+    'created_date' : new Date ('2023-03-01')
+  },
+
+    {
+    'id': 3, 
+    'title': 'Daal Curry',
+    'description': 'Delicious Indian lentil soup served with spiced rice',
+    'location': 'Aarhus',
+    'When': new Date ('2023-04-17T09:30:00Z'),
+    'max_reservation' : 10 , 
+    'price' : 150,
+    'created_date' : new Date ('2023-03-01')
+  }
+
+]);
+
+
+
+use('mealSharingApp');
+db.Reservation.insertMany([
+ {
+    'id': 1, 
+    'number_of_guests': 2,
+    'meal_id': 2,
+    'created_date' : new Date ('2023-03-01'),
+    'contact_phonenumber': 22334455,
+    'contact_name': 'Mads',
+    'contact_email' : 'mads@gmail.com'
+  },
+
+   {
+    'id': 2, 
+    'number_of_guests': 1,
+    'meal_id': 3,
+    'created_date' : new Date ('2023-03-01'),
+    'contact_phonenumber': 52634755,
+    'contact_name': 'Kate',
+    'contact_email' : 'kate@gmail.com'
+  },
+
+   {
+    'id': 3, 
+    'number_of_guests': 3,
+    'meal_id': 1,
+    'created_date' : new Date ('2023-03-01'),
+    'contact_phonenumber': 51624055,
+    'contact_name': 'Paul',
+    'contact_email' : 'paul@gmail.com'
+  }
+
+]);
+
+
+use('mealSharingApp');
+db.Review.insertMany([
+ {
+    'id': 1, 
+    'title': 'Amazingly good',
+    'description': 'Awesome food and wecoming host',
+    'meal_id' : 1,
+    'stars': 5,
+    'created_date' : new Date ('2022-02-02')
+  },
+
+    {
+    'id': 2, 
+    'title': 'Super tasty',
+    'description': 'Exactly like on Alex in Berlin',
+    'meal_id' : 3,
+    'stars': 5,
+    'created_date' : new Date ('2021-12-01')
+  },
+
+ {
+    'id': 5, 
+    'title': 'Nice',
+    'description': 'Liked it!',
+    'meal_id' : 2,
+    'stars': 4,
+    'created_date' : new Date ('2021-12-02')
+  },
+
+   {
+    'id': 6, 
+    'title': 'Perfect',
+    'description': 'Best sandwitch ever',
+    'meal_id' : 2,
+    'stars': 5,
+    'created_date' : new Date ('2021-12-02')
+  }
+
+]);
