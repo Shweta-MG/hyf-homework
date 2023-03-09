@@ -1,0 +1,47 @@
+// Run a find command to get all Review
+use('mealSharingApp');
+
+// Run a insert command to add new Review
+
+use('mealSharingApp');
+db.Review.insertOne([
+ {
+    'id': 10, 
+    'title': 'Amazingly good',
+    'description': 'Awesome food and wecoming host',
+    'meal_id' : 1,
+    'stars': 5,
+    'created_date' : new Date ('2022-02-20')
+  }
+]);
+
+
+
+use('mealSharingApp');
+db.Review.find();
+
+
+
+
+//Get a Review with any id, fx 1
+use('mealSharingApp');
+db.Review.find({'id': 1});
+
+
+//Update a Review with any id, fx 1. Update any attribute fx the title or multiple attributes
+use('mealSharingApp');
+db.Review.updateOne( { 'id': 1 }, { $set: { 'id': 9 } } ) ;
+
+
+
+use('mealSharingApp');
+db.Review.find();
+
+
+//Delete a Review with any id, fx 1 
+use('mealSharingApp');
+db.Review.deleteOne({ 'id': 9 })
+
+
+use('mealSharingApp');
+db.Review.find();
