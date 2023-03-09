@@ -39,4 +39,11 @@ CREATE TABLE Order_Details (
     FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
-
+USE mealSharingApp;
+CREATE TABLE Payment_Type(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    COD ENUM;
+    Prepaid_Online ENUM;
+    Postpaid_Online ENUM;
+    FOREIGN KEY (Order_id) REFERENCES Order_Details(id),
+    );
