@@ -54,7 +54,7 @@ db.Meals.find({ 'price': {$lt : 250} });
 
 //Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
 use('mealSharingApp');
-db.Meals.find({ title: /Daal/ });
+db.Meals.find({ title: /Daal/i }); //Making search case sensitive.
 
 
 //Get meals that has been created between two dates
