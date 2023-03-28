@@ -1,0 +1,46 @@
+// Select the database to use.
+use('mealSharingApp');
+
+
+
+// Run a find command to get all Reservation
+use('mealSharingApp');
+db.Reservation.find();
+
+// Run a insert command to add new Reservation
+use('mealSharingApp');
+db.Reservation.insertOne([
+ {
+    'id': 7, 
+    'number_of_guests': 2,
+    'meal_id': 2,
+    'created_date' : new Date ('2023-03-10'),
+    'contact_phonenumber': 77334455,
+    'contact_name': 'Madisa',
+    'contact_email' : 'madisa@gmail.com'
+  }
+]);
+
+
+use('mealSharingApp');
+db.Reservation.find();
+
+//Get a Reservation with any id, fx 1
+use('mealSharingApp');
+db.Reservation.find({'id': 3});
+
+
+//Update a Reservation with any id, fx 1. Update any attribute fx the title or multiple attributes
+use('mealSharingApp');
+db.Reservation.updateOne( { 'id': 1 }, { $set: { 'id': 10 } } ) ;
+
+use('mealSharingApp');
+db.Reservation.find();
+
+
+//Delete a Reservation with any id, fx 1
+use('mealSharingApp');
+db.Reservation.deleteOne({ 'id': 1 })
+
+use('mealSharingApp');
+db.Reservation.find();

@@ -1,0 +1,165 @@
+// Select the database to use.
+use('mealSharingApp');
+
+// Run a find command to get all meal
+use('mealSharingApp');
+db.Meals.find();
+
+// Add a new meal
+use('mealSharingApp');
+db.Meals.insertOne([
+  {
+    'id': 7, 
+    'title': 'Daal Bati Churma',
+    'description': 'Delicious Indian dish made in ghee',
+    'location': 'Aarhus',
+    'When': new Date ('2023-04-10T11:30:00Z'),
+    'max_reservation' : 30 , 
+    'price' : 250,
+    'created_date' : new Date ('2023-03-08')
+  }
+])
+
+use('mealSharingApp');
+db.Meals.find();
+
+//Get a meal with any id, fx 1
+use('mealSharingApp');
+db.Meals.find({'id': 3});
+
+
+
+//Update a meal with any id, fx 1. Update any attribute fx the title or multiple attributes
+use('mealSharingApp');
+db.Meals.updateOne( { 'title': "Butter Chicken Curry" }, { $set: { 'title': "Buttery Butter Chicken Curry" } } ) 
+
+use('mealSharingApp');
+db.Meals.find();
+
+
+//Delete a meal with any id, fx 1
+use('mealSharingApp');
+db.Meals.deleteOne({ 'title': "Buttery Butter Chicken Curry" })
+
+use('mealSharingApp');
+db.Meals.find();
+
+//Get meals that has a price smaller than a specific price fx 90
+use('mealSharingApp');
+db.Meals.find({ 'price': {$lt : 250} });
+
+
+//Get meals that still has available reservations
+
+
+//Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
+use('mealSharingApp');
+db.Meals.find({ title: /Daal/i }); //Making search case sensitive.
+
+
+//Get meals that has been created between two dates
+use('mealSharingApp');
+db.Meals.aggregate([
+   {
+      $match: {
+         created_date: {
+            $gte: new Date("2023-03-01T00:00:00Z"),
+            $lte: new Date("2023-03-041T00:00:00Z")
+         }
+      }
+   }
+]);
+
+//Get only specific number of meals fx return only 5 meals
+use('mealSharingApp');
+db.Meals.aggregate([
+   { $limit : 2 }
+]);
+
+
+//Get the meals that have good reviews
+use('mealSharingApp');
+db.Review.find();
+
+
+use('mealSharingApp');
+db.Meals.aggregate([
+  {
+      $lookup: {
+         from: "Review",
+         localField: "id",
+         foreignField: "meal_id",
+         as: "Reviews"
+      }
+  },
+  {
+      $match: {
+         "Reviews.stars": { $gte: 4 }
+      }
+  },
+  {
+      $project: {
+         _id: "$title",
+         stars: "$Reviews.stars"
+      }
+  }
+]);
+
+//Get reservations for a specific meal sorted by created_date
+use('mealSharingApp');
+db.Reservation.find();
+
+
+use('mealSharingApp');
+db.Meals.find();
+
+use('mealSharingApp');
+db.Reservation.aggregate([
+  {
+      $lookup: {
+        "from": "Meals",
+         "localField": "meal_id",
+         "foreignField": "id",
+         "as": "Meal"
+      }
+  },
+  {
+      $match: {
+         "meal_id": 3
+      }
+  },
+  {
+      $sort: {
+         "created_date": 1
+      }
+  }
+]);
+
+//Sort all meals by average number of stars in the reviews
+use('mealSharingApp');
+db.Review.find();
+
+use('mealSharingApp');
+db.Review.aggregate([
+  {
+      $lookup: {
+         from: "Review",
+         localField: "id",
+         foreignField: "meal_id",
+         as: "reviews"
+      }
+  },
+  {
+      $project: {
+         _id: "$id",
+         title: "$title",
+         description: "$description",
+         average_review: { $avg: "$reviews.stars" } 
+      }
+  },
+  {
+      $sort: {
+         average_review: 1
+      }
+  }
+]);
