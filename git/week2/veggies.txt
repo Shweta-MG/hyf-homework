@@ -1,5 +1,7 @@
 1. Kartofler
 2. Tomat
-3. Aubergine
+3. Løg
 4. Salat
 5. Svamp
+6. Aubergine
+7. Hvidløg
