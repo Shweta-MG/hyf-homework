@@ -26,7 +26,7 @@ if (useFormalName === true && gender === true) {
 
 /* Calling out empty string will give them funny names. I am sure no one wants to spent money on that*/
 
-let useFormalName = true;
+let useFormalName;
 let chooseGender;
 let fullname1;
 let fullname2;
