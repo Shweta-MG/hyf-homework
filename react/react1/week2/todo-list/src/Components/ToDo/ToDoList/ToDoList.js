@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './ToDoList.css';
 
 const ToDoList = (props) => {
@@ -8,26 +9,6 @@ const ToDoList = (props) => {
     const title = props.title;
     const deleteHandler = props.deleteHandler;
 
-    {/**
-    
-
-
-    const CheckedToDo = () => {
-        const [isChecked, setIsChecked] = useState(false);
-    }
-
-    const handleCheckboxChange = () => {
-        setIsChecked(!isChecked);
-    };
-    
-    const textStyle = {
-        textDecoration: isChecked ? 'line-through' : 'none'
-    };
-
-        */
-
-}
-
 
    
     return (  
@@ -35,10 +16,12 @@ const ToDoList = (props) => {
             <h2>{title}</h2>
             {todos.length === 0 ? 'No To-Dos to display' : todos.map((todo) => (<div className="todo-preview" key={todo.id}>
                 <div className="todo-description">
-                    <input type="checkbox"
-                        name="checkbox"
-                        id="checkbox" />
-                    <h2> {todo.description}</h2>
+                    <input
+                        type="checkbox"
+                        checked={todo.isChecked} />
+                    <span>
+                        <h2> {todo.description}</h2>
+                    </span>
                 </div>
 
                 <div className="todo-details">
