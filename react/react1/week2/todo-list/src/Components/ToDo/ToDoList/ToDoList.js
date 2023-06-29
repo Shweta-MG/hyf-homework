@@ -1,6 +1,9 @@
 import './ToDoList.css';
 
 const ToDoList = (props) => {
+    {/**
+    declaring props as variable for clear code and better understading.
+    **/}
     const todos = props.todos;
     const title = props.title;
     const deleteHandler = props.deleteHandler;

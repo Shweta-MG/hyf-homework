@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Timer from "./ToDo/Timer/Timer";
 import ToDoForm from "./ToDo/ToDoForm/ToDoForm";
 import ToDoList from "./ToDo/ToDoList/ToDoList";
 
@@ -42,6 +43,7 @@ const Home = () => {
    
     return (  
         <div className="home">
+            <Timer/>
             <ToDoForm addToDo={addToDo} />
             <ToDoList
                 todos={todos}
