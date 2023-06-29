@@ -20,6 +20,12 @@
 
 .todo-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end ;
+  align-items: center;
+}
+
+.todo-description {
+  display: flex;
+  justify-content: flex-start ;
   align-items: center;
 }
