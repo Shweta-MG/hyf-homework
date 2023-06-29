@@ -14,12 +14,19 @@ const ToDoList = (props) => {
   }
 
   const { todos, title, deleteHandler } = props;
+  console.log({ todos });
+  console.log(todos.id);
+
 
   const [isChecked, setIsChecked] = useState(false);
 
-  const handleCheckbox = () => {
-    setIsChecked(!isChecked);
+  const handleCheckbox = (id) => {    
+    if (todos.id === id) {
+      setIsChecked(!isChecked);      
+    }
   };
+;
+
 
   return (
     <div className="todo-list">
@@ -31,7 +38,7 @@ const ToDoList = (props) => {
               <div className="todo-description">
                 <input
                   type="checkbox"
-                  checked={todo.isChecked}
+                  checked={isChecked}
                   onChange={() => handleCheckbox(todo.id)}
                 />
 
@@ -40,13 +47,13 @@ const ToDoList = (props) => {
                     textDecoration: isChecked ? "line-through" : "none",
                   }}
                 >
-                  
                   {todo.description}
                 </span>
               </div>
 
               <div className="todo-details">
-                <p> {todo.deadline}</p>
+              <p> {todo.deadline}</p>
+              
                 <button
                   onClick={() => {
                     deleteHandler(todo.id);
