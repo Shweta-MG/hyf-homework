@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# ToDo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created as part of HYF React Module1 homework. This ToDo app will be developed gradually as per instructions given in the homework.
 
 ## Available Scripts
 
