@@ -1,0 +1,9 @@
+
+.timer {
+    text-align: center;
+}
+
+.timerSeconds {
+    font-weight: bold;
+    text-decoration: underline;
+}

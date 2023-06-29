@@ -1,6 +1,7 @@
-import React , { useState } from "react";
-import ToDoList from "./ToDo/ToDoList";
-import ToDoForm from "./ToDo/ToDoForm";
+import React, { useState } from "react";
+import Timer from "./ToDo/Timer/Timer";
+import ToDoForm from "./ToDo/ToDoForm/ToDoForm";
+import ToDoList from "./ToDo/ToDoList/ToDoList";
 
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
    
     return (  
         <div className="home">
+            <Timer/>
             <ToDoForm addToDo={addToDo} />
             <ToDoList
                 todos={todos}

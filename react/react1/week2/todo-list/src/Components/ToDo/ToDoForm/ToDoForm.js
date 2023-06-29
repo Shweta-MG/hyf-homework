@@ -16,6 +16,8 @@ const ToDoForm = (props) => {
         setDesc('');
     }
 
+
+
     return (  
         <form className="form" onSubmit={submitHandler}>
             <div>
@@ -28,6 +30,7 @@ const ToDoForm = (props) => {
                         onChange={(e) => setDesc(e.target.value)}
                     />
                 </div>
+
                 <div>
                     <label> Target Date </label>
                     <input
