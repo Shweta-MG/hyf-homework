@@ -1,4 +1,3 @@
-
 /* I am trying to make it if-- else if loop, bacause I can notice so many checks. It worked okay. */
 
 const class07Students = [];
