@@ -6,10 +6,6 @@ import ToDoList from "./ToDo/ToDoList/ToDoList";
 
 const Home = () => {
 
-    const onDeleteHandler = (id) => {
-        const newToDos = todos.filter(todo => todo.id !== id);
-        setTodos(newToDos);
-    }
 
     const addToDo = (desc, date) => {
         let id;       
@@ -24,6 +20,12 @@ const Home = () => {
         setTodos([...todos, newToDo])
     }
 
+
+    const onDeleteHandler = (id) => {
+        const newToDos = todos.filter(todo => todo.id !== id);
+        setTodos(newToDos);
+    }
+    
 
     const [todos, setTodos] = useState([
         {
