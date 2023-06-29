@@ -1,6 +1,6 @@
-import React , { useState } from "react";
-import ToDoList from "./ToDo/ToDoList";
-import ToDoForm from "./ToDo/ToDoForm";
+import React, { useState } from "react";
+import ToDoForm from "./ToDo/ToDoForm/ToDoForm";
+import ToDoList from "./ToDo/ToDoList/ToDoList";
 
 
 const Home = () => {
