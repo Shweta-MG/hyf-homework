@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# ToDo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created as part of HYF React Module1 homework. This ToDo app will be developed gradually as per instructions given in the homework.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Website api for sharing meals together. Invite your best friends or your family for dinner!
+📝 Table of Contents
+About
+Getting Started
+Usage
+Built Using
+Authors
+🧐 About
+Link to deployed website:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project will be built out over 3 different classes:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Nodejs week 3 - Here you will be building the backend api. Meaning you will work in the src/backend folder.
+React week 5 - Here you will be building the frontend components and routing. In this week you will be working in the src/client folder.
+Meal sharing class - After week 5 of react you will have a specific class for finishing the meal sharing website. Here you will make everything work and deploy the website to the internet
+🏁 Getting Started
+Environment variables
+All sensitive data like fx passwords and usernames, we dont want to add to git! This problem we solve by having environment variables. Environment variables are not committed to git and have a key value structure.
 
-### `npm test`
+Remember to copy the .env.example file, and rename the copied file to .env. In the .env file add the relevant host, database name, database user and pasword to your own local database. If you are unsure of these things then select your database in the Mysql Workbench. Now press Database -> Manage Connections.... Here you can see everything you need except the password. If you forgot that, reset it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prerequisites
+Postman
+MySQL Workbench
+Installing
+To install run npm install
 
-### `npm run build`
+🎈 Usage
+To run npm run dev
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The api can now be found on http://localhost:3000/api/ an example is http://localhost:3000/api/meals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⛏️ Built Using
+Mysql - Database
+Express - Server Framework
+NodeJs - Server Environment
+✍️ Authors
+@benna100 - Idea & Initial work
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
