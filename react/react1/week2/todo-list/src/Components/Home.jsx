@@ -13,9 +13,14 @@ const Home = () => {
             id: 1
         },        
         {
-            description: "Go out for coffee ",
+            description: "Brush teeth",
             deadline: "2023-04-12",
             id: 2
+        },,        
+        {
+            description: "Eat breakfast ",
+            deadline: "2023-06-12",
+            id: 3
         }]);
 
     

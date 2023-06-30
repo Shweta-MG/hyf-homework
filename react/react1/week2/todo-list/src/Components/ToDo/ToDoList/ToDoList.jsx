@@ -15,17 +15,12 @@ const ToDoList = (props) => {
 
   const { todos, title, deleteHandler } = props;
   console.log({ todos });
-  console.log(todos.id);
+  
 
 
   const [isChecked, setIsChecked] = useState(false);
 
-  const handleCheckbox = (id) => {    
-    if (todos.id === id) {
-      setIsChecked(!isChecked);      
-    }
-  };
-;
+
 
 
   return (
@@ -37,9 +32,9 @@ const ToDoList = (props) => {
             <div className="todo-preview" key={todo.id}>
               <div className="todo-description">
                 <input
-                  type="checkbox"
-                  checked={isChecked}
-                  onChange={() => handleCheckbox(todo.id)}
+                type="checkbox"
+                checked={todo.isChecked || false}
+                onChange={() => deleteHandler(todo.id)}
                 />
 
                 <span
