@@ -38,26 +38,15 @@ const Home = () => {
         setTodos([...todos, newToDo])
     }
 
-
-    const onDeleteHandler = (id) => {
-        const newToDos = todos.filter(todo => todo.id !== id);
-        setTodos(newToDos);
-    }
-    
-
-    
-    
-
-
-   
+  
     return (  
         <div className="home">
             <Timer/>
             <ToDoForm addToDo={addToDo} />
             <ToDoList
                 todos={todos}
-                title={'All are the To-Dos'}
-                deleteHandler={onDeleteHandler} /> 
+                setTodos={setTodos}
+                title={'All are the To-Dos'}/> 
         </div>
     );
 }

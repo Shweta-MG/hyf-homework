@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import ToDoItem from "../ToDoItem/ToDoItem";
 import "./ToDoList.css";
 
 const ToDoList = (props) => {
@@ -8,57 +9,27 @@ const ToDoList = (props) => {
 
     const todos = props.todos;
     const title = props.title;
-    const deleteHandler = props.deleteHandler;
-
+    
     **/
   }
-
-  const { todos, title, deleteHandler } = props;
+  
+  const { todos, title, setTodos } = props;
   console.log({ todos });
   
-
-
-  const [isChecked, setIsChecked] = useState(false);
-
-
-
 
   return (
     <div className="todo-list">
       <h2>{title}</h2>
       {todos.length === 0
         ? "No To-Dos to display"
-        : todos.map((todo) => (
-            <div className="todo-preview" key={todo.id}>
-              <div className="todo-description">
-                <input
-                type="checkbox"
-                checked={todo.isChecked || false}
-                onChange={() => deleteHandler(todo.id)}
-                />
-
-                <span
-                  style={{
-                    textDecoration: isChecked ? "line-through" : "none",
-                  }}
-                >
-                  {todo.description}
-                </span>
-              </div>
-
-              <div className="todo-details">
-              <p> {todo.deadline}</p>
-              
-                <button
-                  onClick={() => {
-                    deleteHandler(todo.id);
-                  }}
-                >
-                  Delete
-                </button>
-              </div>
-            </div>
-          ))}
+        : todos.map(item => {
+          return <ToDoItem
+            key={item.id}
+            description={item.description}
+            todos={todos}
+            setTodos={setTodos}
+            id={item.id}/>
+          })}
     </div>
   );
 };
