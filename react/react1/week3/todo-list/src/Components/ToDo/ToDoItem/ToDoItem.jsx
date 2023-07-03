@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 const ToDoItem = (props) => {
 
-    const { todos, setTodos } = props;
+  const {description, deadline} = props;
+  const { todos, setTodos } = props;
     
     const [isChecked, setIsChecked] = useState(false);
 
@@ -24,12 +25,12 @@ const ToDoItem = (props) => {
       />
 
       <span style={{textDecoration: isChecked ? "line-through" : "none"}}>
-        {props.description}
+        {description}
       </span>
     </div>
 
     <div className="todo-details">
-    <p> {props.deadline}</p>
+    <p> {deadline}</p>
     
       <button onClick={() => {onDeleteHandler(props.id)}}>
         Delete
