@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './ToDoForm.css';
 
 const ToDoForm = (props) => {
-    const addToDo = props.addToDo;
+    const {addToDo} = props;
     const [desc, setDesc] = useState('');
     const [date, setDate] = useState('');
     
@@ -47,6 +47,3 @@ const ToDoForm = (props) => {
 }
 
 export default ToDoForm;
-
-
-//<p>{ desc } { date} </p>

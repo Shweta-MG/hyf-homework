@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 const ToDoItem = (props) => {
 
-  const {description, deadline} = props;
-  const { todos, setTodos } = props;
+  const {description, deadline, todos, setTodos} = props;
     
     const [isChecked, setIsChecked] = useState(false);
 

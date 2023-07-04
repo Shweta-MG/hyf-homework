@@ -26,6 +26,7 @@ const ToDoList = (props) => {
           return <ToDoItem
             key={item.id}
             description={item.description}
+            deadline={item.deadline}
             todos={todos}
             setTodos={setTodos}
             id={item.id}/>
