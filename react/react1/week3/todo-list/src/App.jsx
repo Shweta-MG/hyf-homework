@@ -19,3 +19,5 @@ function App() {
 }
 
 export default App;
+
+// Trial - Pushing to check, how to push from detached head!.
