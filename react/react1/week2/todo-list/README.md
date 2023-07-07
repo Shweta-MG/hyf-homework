@@ -1,45 +1,72 @@
-# ToDo App
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I am Shweta</h1>
 
-This project is created as part of HYF React Module1 homework. This ToDo app will be developed gradually as per instructions given in the homework.
+<h2 align="center">ToDo App</h2>
+
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?color=FE64D9&center=true&lines=Project+Manager;ToDo+App+Using+ReactJs&center=true&width=380&height=45"></a>
+</p>
+
+<br>
+
+<img align="right"  alt="Greeting" width="350" src="https://github.com/Shweta-MG/Shweta-MG/blob/main/d4tvukbt5mra37cvwklk.gif" />
+
+<p align="left" width="400" style="padding-right": 50px">
+<h2 align="center"> ✨ About me </h2>
+<br>
+<p align="left" width="400" style="padding-right": 50px">
+I'm currently Part of Web development bootcamp and dreaming to be part of IT world. I have already experienced impact on lives created by welcoming technologies into work life. So I am eagerly waiting to connect my previous experience with newly acquired skills, and using it to make positive differences in our lives. 
+
+I am a passionate, positive person, who likes to learn new skills, read books, and try new things.  
+</p>
+</p>
+<br>
+<br>
+<br>
+<br>
+
+- 🤩 I always try to explore and learn something new.
+- 🌱 I’m currently learning Web development and Danish language.
+- 👯 I’m looking to collaborate with others to sharpens my web development skills.
+- 🥅 Goals: Create a fullstack project from scratch and deploy it. 
+- 🎉 Let's connect [here](https://www.linkedin.com/in/shwetamalavgupta/).
+- 📫 How to reach me: [📩](shweta.malav@gmail.com).
+- 😄 Pronouns: She\her
+<br>
 
 
 
-Website api for sharing meals together. Invite your best friends or your family for dinner!
-📝 Table of Contents
-About
-Getting Started
-Usage
-Built Using
-Authors
-🧐 About
-Link to deployed website:
+<h2 align="center"> ⚡️ Technology Stacks </h2>
+<br>
+                  
+<p align="center">
 
-This project will be built out over 3 different classes:
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,typescript)](https://skillicons.dev)
 
-Nodejs week 3 - Here you will be building the backend api. Meaning you will work in the src/backend folder.
-React week 5 - Here you will be building the frontend components and routing. In this week you will be working in the src/client folder.
-Meal sharing class - After week 5 of react you will have a specific class for finishing the meal sharing website. Here you will make everything work and deploy the website to the internet
-🏁 Getting Started
-Environment variables
-All sensitive data like fx passwords and usernames, we dont want to add to git! This problem we solve by having environment variables. Environment variables are not committed to git and have a key value structure.
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,nextjs)](https://skillicons.dev)
 
-Remember to copy the .env.example file, and rename the copied file to .env. In the .env file add the relevant host, database name, database user and pasword to your own local database. If you are unsure of these things then select your database in the Mysql Workbench. Now press Database -> Manage Connections.... Here you can see everything you need except the password. If you forgot that, reset it.
+[![My Skills](https://skillicons.dev/icons?i=mysql,mongodb)](https://skillicons.dev)
 
-Prerequisites
-Postman
-MySQL Workbench
-Installing
-To install run npm install
+[![My Skills](https://skillicons.dev/icons?i=git,vscode,postman,docker,figma)](https://skillicons.dev)
 
-🎈 Usage
-To run npm run dev
+<img height="65" src="https://github.com/devicons/devicon/blob/master/icons/jira/jira-original-wordmark.svg" />
+<img height="65" src="https://github.com/devicons/devicon/blob/master/icons/confluence/confluence-original-wordmark.svg" />
+<img height="65" src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-plain-wordmark.svg"/>
 
-The api can now be found on http://localhost:3000/api/ an example is http://localhost:3000/api/meals
+</p>
 
-⛏️ Built Using
-Mysql - Database
-Express - Server Framework
-NodeJs - Server Environment
-✍️ Authors
-@benna100 - Idea & Initial work
+<br>
+<br>
 
+<h2 align="center"> 🤝🏻 Connect with me </h2>
+<br>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/shwetamalavgupta/">
+   <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+  </a>
+  <a href="mailto:shweta.malav@gmail.com">
+     <img src="https://img.icons8.com/color/48/000000/gmail.png"/>
+  </a>
+</p>
+
+<br />
