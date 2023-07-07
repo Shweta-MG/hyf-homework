@@ -12,7 +12,10 @@
 <br>
 <br>
 <h4 align="center">Desktop view of ToDo App</h4>
+<p align="center">
 <img align="center"  alt="Greeting" width="650" src="https://github.com/Shweta-MG/hyf-homework/blob/react/react1/week2/react/react1/week2/todo-list/Desktop.gif" />
+</p>
+
 
 
 <br>
