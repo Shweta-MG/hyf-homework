@@ -8,7 +8,7 @@
 </p>
 
 <br>
-<h2 align="center"> ✨ About </h2>
+<h2 align="left"> ✨ About </h2>
 <br>
 <br>
 <h4 align="center">Desktop view of ToDo App</h4>
