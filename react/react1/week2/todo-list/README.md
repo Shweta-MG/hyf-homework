@@ -8,7 +8,7 @@
 
 <br>
 
-<img align="right"  alt="Greeting" width="350" src="https://github.com/Shweta-MG/Shweta-MG/blob/main/d4tvukbt5mra37cvwklk.gif" />
+<img align="right"  alt="Greeting" width="350" src="https://github.com/Shweta-MG/hyf-homework/blob/react/react1/week2/react/react1/week2/todo-list/Desktop.gif" />
 
 <p align="left" width="400" style="padding-right": 50px">
 <h2 align="center"> ✨ About me </h2>
