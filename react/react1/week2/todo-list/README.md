@@ -3,7 +3,8 @@
 <h2 align="center">ToDo App</h2>
 
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?color=FE64D9&center=true&lines=Project+Manager;ToDo+App+Using+ReactJs&center=true&width=380&height=45"></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?color=FE64D9&center=true&lines=ToDo+App+Using+ReactJs&center=true&width=380&height=45">
+  </a>
 </p>
 
 <br>
