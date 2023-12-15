@@ -1,45 +1,33 @@
-# ToDo App
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
 
-This project is created as part of HYF React Module1 homework. This ToDo app will be developed gradually as per instructions given in the homework.
+<h2 align="center">ToDo App</h2>
+
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?color=FE64D9&center=true&lines=ToDo+App+Using+ReactJs&center=true&width=380&height=45">
+  </a>
+</p>
+
+<br>
+<h2 align="left"> ✨ About </h2>
+<br>
+<br>
+<h4 align="center">Desktop view of ToDo App</h4>
+
+<br>
+
+Below displayed the desktop view of app. This app has responsive Header, Footer. User can complete the task, delete the task and add the task with target date.
+
+<br>
+<p align="center">
+<img align="center"  alt="Greeting" width="650" src="https://github.com/Shweta-MG/hyf-homework/blob/react/react1/week2/react/react1/week2/todo-list/Desktop.gif" />
+</p>
 
 
 
-Website api for sharing meals together. Invite your best friends or your family for dinner!
-📝 Table of Contents
-About
-Getting Started
-Usage
-Built Using
-Authors
-🧐 About
-Link to deployed website:
+<br>
 
-This project will be built out over 3 different classes:
 
-Nodejs week 3 - Here you will be building the backend api. Meaning you will work in the src/backend folder.
-React week 5 - Here you will be building the frontend components and routing. In this week you will be working in the src/client folder.
-Meal sharing class - After week 5 of react you will have a specific class for finishing the meal sharing website. Here you will make everything work and deploy the website to the internet
-🏁 Getting Started
-Environment variables
-All sensitive data like fx passwords and usernames, we dont want to add to git! This problem we solve by having environment variables. Environment variables are not committed to git and have a key value structure.
 
-Remember to copy the .env.example file, and rename the copied file to .env. In the .env file add the relevant host, database name, database user and pasword to your own local database. If you are unsure of these things then select your database in the Mysql Workbench. Now press Database -> Manage Connections.... Here you can see everything you need except the password. If you forgot that, reset it.
 
-Prerequisites
-Postman
-MySQL Workbench
-Installing
-To install run npm install
 
-🎈 Usage
-To run npm run dev
-
-The api can now be found on http://localhost:3000/api/ an example is http://localhost:3000/api/meals
-
-⛏️ Built Using
-Mysql - Database
-Express - Server Framework
-NodeJs - Server Environment
-✍️ Authors
-@benna100 - Idea & Initial work
-
+    
